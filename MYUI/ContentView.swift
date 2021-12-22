@@ -141,8 +141,7 @@ struct ContentView: View {
                         .font(.system(size: 18,weight: .bold))
                         .foregroundColor(.blue)
                         .cornerRadius(10)
-                }
-                Spacer()
+                }.padding(.bottom,40)
             }
             
             
@@ -152,6 +151,18 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        Group{
+            ContentView()
+                .previewDevice(PreviewDevice(rawValue: "iPhone 8"))
+            
+            ContentView()
+                .previewDevice(PreviewDevice(rawValue: "iPhone 8 Plus"))
+            
+            ContentView()
+                .previewDevice(PreviewDevice(rawValue: "iPhone X"))
+            
+            ContentView()
+                .previewDevice(PreviewDevice(rawValue: "iPhone 13 Pro Max"))
+        }
     }
 }
