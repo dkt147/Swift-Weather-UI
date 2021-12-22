@@ -162,8 +162,6 @@ struct ContentView_Previews: PreviewProvider {
             ContentView()
                 .previewDevice(PreviewDevice(rawValue: "iPhone X"))
             
-            ContentView()
-                .previewDevice(PreviewDevice(rawValue: "iPhone 13 Pro Max"))
         }
     }
 }
